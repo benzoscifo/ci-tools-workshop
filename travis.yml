@@ -3,3 +3,10 @@ language:
 
 node_js:
   - "5.1"
+
+before_script:
+  - npm install grunt-cli -grunt-cli
+  - npm install
+
+script:
+  - grunt test
